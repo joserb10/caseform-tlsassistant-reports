@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    class CodeTwo extends HTMLElement {
+    constructor() {
+        super();
+    }
+}
+customElements.define('custom_font_code-2', CodeTwo);
+</script>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TLSAv2</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <style>
+        custom_font_code-2 {
+          text-underline: #000000;
+          display: inline; /* or block if you want it to behave like a block element */
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="header-blue" style="color: var(--bs-blue);background: #0068b4;">
+        <nav class="navbar navbar-dark navbar-expand-md navigavtion-clean-search">
+            <div class="container-fluid">
+                <div class="card" style="background: rgba(255,255,255,0);border-style: none;"><a class="navbar-brand"
+                        href="#" style="font-family: roboto;text-align: left;"><img class="img-fluid"
+                            src="assets/img/FBK_Cybersecurity_white.png" style="width: 150px;">&nbsp;
+                        &nbsp;TLSAssistant</a></div><label class="form-label"
+                    style="color: #a5a5a5;font-family: Roboto, sans-serif;">Version 3.0.0</label>
+            </div>
+        </nav>
+        <div class="container" style="background: #ffffff;border-radius: 10px;max-width: 90%;">
+            
+            <div class="card" style="padding: 8px;margin-top: 8;">
+                <h2
+                    style="color: #0068b4;font-family: Roboto, sans-serif;margin-top: 0px;padding-top: 8px;padding-right: 8px;padding-bottom: 0px;padding-left: 7px;">
+                    Recap</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Hostname/<br>Modules</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">3SHAKE</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">alpaca</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">BEAST</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">BREACH</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">CSS Injection</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Missing Certificate Transparency</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">CRIME</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">DROWN</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Freak</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Heartbleed</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">HSTS not preloaded</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">HSTS not set</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">HTTPS not enforced</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Logjam</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Lucky 13</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Bar Mitzvah</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">RC4 NOMORE</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">padding_oracle</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">PFS</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">raccoon</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Renegotiation attack</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">ROBOT</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">SLOTH</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">sslpoodle</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Sweet32</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Ticketbleed</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">tlspoodle</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                <tr>
+                                    <td
+                                        style="font-family: Roboto, sans-serif;background: rgba(255,175,175,0);font-style: italic;">
+                                        stage.caseform.de</td>
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Potentially Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Potentially Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Potentially Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Not Vulnerable
+                                                
+                                            </td>
+                                        
+                                    
+
+
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <h2
+                style="color: #0068b4;font-family: Roboto, sans-serif;padding-top: 8px;padding-bottom: 0px;padding-left: 7px;padding-right: 8px;">
+                Detailed Results</h2>
+            <h6
+                style="color: #6c757d;font-family: Roboto, sans-serif;padding: 0px;padding-left: 9px;padding-top: 0px;padding-bottom: 4px;">
+                2024-10-17 22:04:44</h6>
+            <h6
+                style="color: #6c757d;font-family: Roboto, sans-serif;padding: 0px;padding-left: 9px;padding-top: 0px;padding-bottom: 4px;">
+                Modules:  three_shake  alpaca  beast  breach  ccs_injection  certificate_transparency  crime  drown  freak  heartbleed  hsts_preloading  hsts_set  https_enforced  logjam  lucky13  mitzvah  nomore  padding_oracle  pfs  raccoon  renegotiation  robot  sloth  sslpoodle  sweet32  ticketbleed  tlspoodle  </h6>
+            
+            
+            <div class="card" style="background: rgba(235,235,235,0.59);">
+                <h5 class="text-center" style="font-family: 'Roboto Condensed', sans-serif;color: #a5a5a5;background: rgba(235,235,235,0);">
+                    stage.caseform.de
+                </h5>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">BREACH</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                CVE:&nbsp;2013-3587 
+                                
+                            
+                                
+                                
+                            
+                                CVSS3:&nbsp;5.9 (Medium) 
+                                
+                            
+                            </h6>
+                        
+                            <h6 class="text-muted card-subtitle mb-2"
+                                style="font-family: Roboto, sans-serif;color: #a5a5a5;"><strong>B</strong>rowser <strong>R</strong>econnaissance and <strong>E</strong>xfiltration via <strong>A</strong>daptive <strong>C</strong>ompression of <strong>H</strong>ypertext
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            By exploiting the information leakage provided by DEFLATE (compression algorithm), an attacker is able to retrieve the session cookie. In particular, the attacker guesses parts of the cookie, injects them in a valid client packet and analyzes the server's response. Thanks to the properties of a DEFLATE output, if the server's response is bigger than an untouched packet, then the guess is wrong.
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Disable the HTTP compression mechanism.</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">- If Apache has been installed via package manager:<br/> disable the DEFLATE module at OS level (e.g. on Ubuntu, run <code>sudo a2dismod deflate</code>);<br/><br/><br/>- if Apache has been manually installed:<br/> 1. open your Apache configuration file (default: <i>/usr/local/apache2/conf/httpd.conf</i>);<br/> 2. search for the line containing : <strong>mod_deflate.so</strong>;<br/> 3. comment or delete it.<br/><br/>N.B. restart the server by typing: <code>sudo service apache2 restart</code>.</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">In a default situation, you can edit your website configuration <i>/etc/nginx/sites-enabled/default</i><br/> (if you changed your site conf name <i>/etc/nginx/sites-enabled/YOURSITECONFIGURATION</i>);<br/><br/>- Do the following:<br/> 1. Edit this file with an editor;<br/> 2. add in your server configuration the string <code>gzip off;</code>. <br/> If not missing, set it off by changing <code>gzip on;</code> to <code>gzip off;</code><br/><br/>- Example: <br/> <i>For example, assuming this is your configuration:</i><br/><br/><br/>  server{<br/>   gzip on;<br/>  }<br/><br/><br/> Change it in:<br/><br/><br/>  server{<br/>   gzip off;<br/>  }<br/><br/><br/> If missing, just add <code>gzip off;</code> inside brackets.<br/><br/>N.B. restart the server by typing: <code>sudo service nginx restart</code>.<br/><br/><strong>However this should be a fast temporary measure</strong>, use <a href='https://github.com/nulab/nginx-length-hiding-filter-module'>this</a> instead.<br/><br/><i>Disabling gzip will disable compression in your website.</i></p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-1"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-1 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-1"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'cve': 'CVE-2013-3587',
+  'cwe': 'CWE-310',
+  'finding': 'potentially VULNERABLE, br gzip HTTP compression detected  - '
+             "only supplied '/' tested",
+  'ip': ['104.21.4.170'],
+  'key': ['BREACH'],
+  'port': '443',
+  'severity': 'MEDIUM'}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">HSTS not preloaded</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            If the HSTS header is not preloaded, a client may be tricked into visiting the unsecure (HTTP) version of a website. This would allow an attacker to read and manipulate his messages.
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Submit the request to <a href='https://hstspreload.org'>HSTSPreload.org</a>.</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">No snippet available</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">No snippet available</p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-2"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-2 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-2"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'HSTS_NOT_PRELOADED': { 'mitigation': { '#omit-xml-declaration': 'yes',
+                                          'Entry': { 'Description': 'If the '
+                                                                    'HSTS '
+                                                                    'header is '
+                                                                    'not '
+                                                                    'preloaded, '
+                                                                    'a client '
+                                                                    'may be '
+                                                                    'tricked '
+                                                                    'into '
+                                                                    'visiting '
+                                                                    'the '
+                                                                    'unsecure '
+                                                                    '(HTTP) '
+                                                                    'version '
+                                                                    'of a '
+                                                                    'website. '
+                                                                    'This '
+                                                                    'would '
+                                                                    'allow an '
+                                                                    'attacker '
+                                                                    'to read '
+                                                                    'and '
+                                                                    'manipulate '
+                                                                    'his '
+                                                                    'messages.',
+                                                     'ExtendedName': 'HSTS not '
+                                                                     'preloaded',
+                                                     'Mitigation': { 'Apache': 'No '
+                                                                               'snippet '
+                                                                               'available',
+                                                                     'Nginx': 'No '
+                                                                              'snippet '
+                                                                              'available',
+                                                                     'Textual': 'Submit '
+                                                                                'the '
+                                                                                'request '
+                                                                                'to '
+                                                                                '<a '
+                                                                                "href='https://hstspreload.org'>HSTSPreload.org</a>."},
+                                                     'Name': 'HSTS not '
+                                                             'preloaded'}},
+                          'stage.caseform.de': True}}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">Lucky 13</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                CVE:&nbsp;2013-0169 
+                                
+                            
+                                CVSS2:&nbsp;2.6 (Low) 
+                                
+                            
+                                
+                                
+                            
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            By exploiting the structure of the Cipher Block Chaining (CBC) mode, an attacker can infer the content of a transmission. The attack is performed by capturing, tampering (actually damaging) and re-transmitting the messages sent by the client to see how the server responds.<br/>The attack, by breaching in the authentication mechanism, has a serious impact on the transmission.
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Update the TLS library to a version that contains the custom mitigations (e.g. OpenSSL v1.0.1e+).</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">No snippet available</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">The best mitigation is to update the OpenSSL libraries. The fastest mitigation is to disable all CBC ciphers.<br/><br/>1. In a default situation, you can edit your website configuration <i>/etc/nginx/sites-enabled/default</i><br/> (if you changed your site conf name <i>/etc/nginx/sites-enabled/YOURSITECONFIGURATION</i>);<br/>2. Inside <code>server {...}</code> brackets configuration, find <code>ssl_ciphers</code>;<br/>3. Remove any CBC-related cipher (even nested one).<br/><br/><br/>N.B. restart the server by typing: <code>sudo service nginx restart</code>.<br/></p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-3"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-3 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-3"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'cve': 'CVE-2013-0169',
+  'cwe': 'CWE-310',
+  'finding': 'potentially vulnerable, uses TLS CBC ciphers',
+  'ip': ['104.21.4.170'],
+  'key': ['LUCKY13'],
+  'port': '443',
+  'severity': 'LOW'}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        <footer class="text-center footer-basic"
+            style="background: rgba(255,255,255,0);padding-bottom: 5px;padding-top: 72px;"><img class="img-fluid"
+                src="assets/img/FBK_Cybersecurity_white.png" style="width: 150px;">
+            <p class="copyright" style="color: #a5a5a5;font-family: Roboto, sans-serif;font-size: 14px;">FBK - Security
+                And Trust Unit © 2024</p>
+        </footer><label class="form-label"></label>
+    </header>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
