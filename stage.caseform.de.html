@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+    class CodeTwo extends HTMLElement {
+    constructor() {
+        super();
+    }
+}
+customElements.define('custom_font_code-2', CodeTwo);
+</script>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TLSAv2</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <style>
+        custom_font_code-2 {
+          text-underline: #000000;
+          display: inline; /* or block if you want it to behave like a block element */
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="header-blue" style="color: var(--bs-blue);background: #0068b4;">
+        <nav class="navbar navbar-dark navbar-expand-md navigavtion-clean-search">
+            <div class="container-fluid">
+                <div class="card" style="background: rgba(255,255,255,0);border-style: none;"><a class="navbar-brand"
+                        href="#" style="font-family: roboto;text-align: left;"><img class="img-fluid"
+                            src="assets/img/FBK_Cybersecurity_white.png" style="width: 150px;">&nbsp;
+                        &nbsp;TLSAssistant</a></div><label class="form-label"
+                    style="color: #a5a5a5;font-family: Roboto, sans-serif;">Version 3.0.0</label>
+            </div>
+        </nav>
+        <div class="container" style="background: #ffffff;border-radius: 10px;max-width: 90%;">
+            
+            <div class="card" style="padding: 8px;margin-top: 8;">
+                <h2
+                    style="color: #0068b4;font-family: Roboto, sans-serif;margin-top: 0px;padding-top: 8px;padding-right: 8px;padding-bottom: 0px;padding-left: 7px;">
+                    Recap</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Hostname/<br>Modules</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Protocols compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Cipher Suites TLS 1.3 compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Cipher Suites compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">TLS Extensions compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Groups compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Signature Algorithms compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Hash Algorithms compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Certificate Signature Algorithms compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Key Lengths compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Certificates compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Certificate Extensions compliance</th>
+                                
+                                    <th style="font-family: Roboto, sans-serif;border-bottom-color: #8db53d;">Misc compliance</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                <tr>
+                                    <td
+                                        style="font-family: Roboto, sans-serif;background: rgba(255,175,175,0);font-style: italic;">
+                                        stage.caseform.de</td>
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Not Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Not Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Not Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Not Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Not Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-weight: bold;background: rgba(255,175,175,0.59);">
+                                                
+                                                    Not Compliant
+                                                
+                                            </td>
+                                        
+                                    
+                                        
+                                            <td
+                                                style="font-family: Roboto, sans-serif;font-style: italic;color: rgb(33, 37, 41);background: rgba(235,235,235,0.59);">
+                                                
+                                                    Compliant
+                                                
+                                            </td>
+                                        
+                                    
+
+
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <h2
+                style="color: #0068b4;font-family: Roboto, sans-serif;padding-top: 8px;padding-bottom: 0px;padding-left: 7px;padding-right: 8px;">
+                Detailed Results</h2>
+            <h6
+                style="color: #6c757d;font-family: Roboto, sans-serif;padding: 0px;padding-left: 9px;padding-top: 0px;padding-bottom: 4px;">
+                2024-10-23 23:27:08</h6>
+            <h6
+                style="color: #6c757d;font-family: Roboto, sans-serif;padding: 0px;padding-left: 9px;padding-top: 0px;padding-bottom: 4px;">
+                Modules:  compare_one_Protocol  compare_one_CipherSuitesTLS1.3  compare_one_CipherSuite  compare_one_Extension  compare_one_Groups  compare_one_Signature  compare_one_Hash  compare_one_CertificateSignature  compare_one_KeyLengths  compare_one_Certificate  compare_one_CertificateExtensions  compare_one_Misc  </h6>
+            
+            
+            <div class="card" style="background: rgba(235,235,235,0.59);">
+                <h5 class="text-center" style="font-family: 'Roboto Condensed', sans-serif;color: #a5a5a5;background: rgba(235,235,235,0);">
+                    stage.caseform.de
+                </h5>
+                
+                
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">Cipher Suites TLS 1.3 compliance</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                            </h6>
+                        
+                            <h6 class="text-muted card-subtitle mb-2"
+                                style="font-family: Roboto, sans-serif;color: #a5a5a5;">
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            Compliance report for CipherSuitesTLS1.3 against BSI guidelines
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Add the following cipher suites to the server configuration:<br/>- TLS_AES_128_CCM_SHA256 should be enabled according to BSI<br/> If TLS 1.3 is not enabled the tool can not check the compliance of the cipher suites mentioned above.</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;"><p>- <b>Quick solution</b>: replace the instruction of the directive <code>SSLOpenSSLConfCmd Ciphersuites</code> with the following string:<br/> <code>TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_AES_128_CCM_SHA256;</code><br/>- <b>Advanced solution</b>: check the directive <code>SSLOpenSSLConfCmd Ciphersuites</code> and for each element in the <b>Textual</b> section above, follow the instructions provided. The separator for this directive is <code>:</code> and to disable an element you can add either <code>-</code> (remove once) or <code>!</code> (kill) in front of it.</p></p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;"><p>- <b>Quick solution</b>: replace the instruction of the directive <code>ssl_conf_command Ciphersuites</code> with the following string:<br/> <code>TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_AES_128_CCM_SHA256;</code><br/>- <b>Advanced solution</b>: check the directive <code>ssl_conf_command Ciphersuites</code> and for each element in the <b>Textual</b> section above, follow the instructions provided. The separator for this directive is <code>:</code> and to disable an element you can add either <code>-</code> (remove once) or <code>!</code> (kill) in front of it.</p></p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-1"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-1 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-1"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'TLS_AES_128_CCM_SHA256': { 'action': 'should be enabled',
+                              'level': 'RECOMMENDED',
+                              'original_level': 'recommended',
+                              'source': 'BSI',
+                              'total_string_only': False},
+  'TLS_AES_128_GCM_SHA256': { 'action': 'has to be enabled',
+                              'level': 'MUST',
+                              'original_level': 'recommended',
+                              'source': 'BSI',
+                              'total_string_only': True},
+  'TLS_AES_256_GCM_SHA384': { 'action': 'has to be enabled',
+                              'level': 'MUST',
+                              'original_level': 'recommended',
+                              'source': 'BSI',
+                              'total_string_only': True},
+  'entries_add': [ 'TLS_AES_128_GCM_SHA256',
+                   'TLS_AES_256_GCM_SHA384',
+                   'TLS_AES_128_CCM_SHA256'],
+  'entries_remove': [],
+  'guidelines': {'BSI'},
+  'notes': []}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">Cipher Suites compliance</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                            </h6>
+                        
+                            <h6 class="text-muted card-subtitle mb-2"
+                                style="font-family: Roboto, sans-serif;color: #a5a5a5;">
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            Compliance report for CipherSuite against BSI guidelines
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Add the following cipher suites to the server configuration:<br/>- TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256 should be enabled according to BSI<br/>- TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384 should be enabled according to BSI<br/>- TLS_ECDHE_PSK_WITH_AES_128_GCM_SHA256 should be enabled according to BSI<br/>- TLS_ECDHE_PSK_WITH_AES_256_GCM_SHA384 should be enabled according to BSI<br/>- TLS_ECDHE_PSK_WITH_AES_128_CCM_SHA256 should be enabled according to BSI<br/>- TLS_DHE_PSK_WITH_AES_128_CBC_SHA256 should be enabled according to BSI<br/>- TLS_DHE_PSK_WITH_AES_256_CBC_SHA384 should be enabled according to BSI<br/>- TLS_DHE_PSK_WITH_AES_128_GCM_SHA256 should be enabled according to BSI<br/>- TLS_DHE_PSK_WITH_AES_256_GCM_SHA384 should be enabled according to BSI<br/>- TLS_DHE_PSK_WITH_AES_128_CCM should be enabled according to BSI<br/>- TLS_DHE_PSK_WITH_AES_256_CCM should be enabled according to BSI</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;"><p>- <b>Quick solution</b>: replace the instruction of the directive <code>SSLCipherSuite</code> with the following string:<br/> <code>ECDHE-PSK-AES128-CBC-SHA256:ECDHE-PSK-AES256-CBC-SHA384:DHE-PSK-AES128-CBC-SHA256:DHE-PSK-AES256-CBC-SHA384:DHE-PSK-AES128-GCM-SHA256:DHE-PSK-AES256-GCM-SHA384:DHE-PSK-AES128-CCM:DHE-PSK-AES256-CCM;</code><br/>- <b>Advanced solution</b>: check the directive <code>SSLCipherSuite</code> and, for each element in the <b>Textual</b> section above, follow the instructions provided. The separator for this directive is <code>:</code> and to disable an element you can add either <code>-</code> (remove once) or <code>!</code> (kill) in front of it.</p></p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;"><p>- <b>Quick solution</b>: replace the instruction of the directive <code>ssl_ciphers</code> with the following string:<br/> <code>ECDHE-PSK-AES128-CBC-SHA256:ECDHE-PSK-AES256-CBC-SHA384:DHE-PSK-AES128-CBC-SHA256:DHE-PSK-AES256-CBC-SHA384:DHE-PSK-AES128-GCM-SHA256:DHE-PSK-AES256-GCM-SHA384:DHE-PSK-AES128-CCM:DHE-PSK-AES256-CCM;</code><br/><p>- <b>Advanced solution</b>: check the directive <code>ssl_ciphers</code> and for each element in the <b>Textual</b> section above, follow the instructions provided. The separator for this directive is <code>:</code> and to disable an element you can add either <code>-</code> (remove once) or <code>!</code> (kill) in front of it.</p></p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-2"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-2 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-2"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'TLS_DHE_PSK_WITH_AES_128_CBC_SHA256': { 'action': 'should be enabled',
+                                           'level': 'RECOMMENDED',
+                                           'original_level': 'recommended',
+                                           'source': 'BSI',
+                                           'total_string_only': False},
+  'TLS_DHE_PSK_WITH_AES_128_CCM': { 'action': 'should be enabled',
+                                    'level': 'RECOMMENDED',
+                                    'original_level': 'recommended',
+                                    'source': 'BSI',
+                                    'total_string_only': False},
+  'TLS_DHE_PSK_WITH_AES_128_GCM_SHA256': { 'action': 'should be enabled',
+                                           'level': 'RECOMMENDED',
+                                           'original_level': 'recommended',
+                                           'source': 'BSI',
+                                           'total_string_only': False},
+  'TLS_DHE_PSK_WITH_AES_256_CBC_SHA384': { 'action': 'should be enabled',
+                                           'level': 'RECOMMENDED',
+                                           'original_level': 'recommended',
+                                           'source': 'BSI',
+                                           'total_string_only': False},
+  'TLS_DHE_PSK_WITH_AES_256_CCM': { 'action': 'should be enabled',
+                                    'level': 'RECOMMENDED',
+                                    'original_level': 'recommended',
+                                    'source': 'BSI',
+                                    'total_string_only': False},
+  'TLS_DHE_PSK_WITH_AES_256_GCM_SHA384': { 'action': 'should be enabled',
+                                           'level': 'RECOMMENDED',
+                                           'original_level': 'recommended',
+                                           'source': 'BSI',
+                                           'total_string_only': False},
+  'TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256': { 'action': 'should be enabled',
+                                             'level': 'RECOMMENDED',
+                                             'original_level': 'recommended',
+                                             'source': 'BSI',
+                                             'total_string_only': False},
+  'TLS_ECDHE_PSK_WITH_AES_128_CCM_SHA256': { 'action': 'should be enabled',
+                                             'level': 'RECOMMENDED',
+                                             'original_level': 'recommended',
+                                             'source': 'BSI',
+                                             'total_string_only': False},
+  'TLS_ECDHE_PSK_WITH_AES_128_GCM_SHA256': { 'action': 'should be enabled',
+                                             'level': 'RECOMMENDED',
+                                             'original_level': 'recommended',
+                                             'source': 'BSI',
+                                             'total_string_only': False},
+  'TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384': { 'action': 'should be enabled',
+                                             'level': 'RECOMMENDED',
+                                             'original_level': 'recommended',
+                                             'source': 'BSI',
+                                             'total_string_only': False},
+  'TLS_ECDHE_PSK_WITH_AES_256_GCM_SHA384': { 'action': 'should be enabled',
+                                             'level': 'RECOMMENDED',
+                                             'original_level': 'recommended',
+                                             'source': 'BSI',
+                                             'total_string_only': False},
+  'entries_add': [ 'TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256',
+                   'TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384',
+                   'TLS_ECDHE_PSK_WITH_AES_128_GCM_SHA256',
+                   'TLS_ECDHE_PSK_WITH_AES_256_GCM_SHA384',
+                   'TLS_ECDHE_PSK_WITH_AES_128_CCM_SHA256',
+                   'TLS_DHE_PSK_WITH_AES_128_CBC_SHA256',
+                   'TLS_DHE_PSK_WITH_AES_256_CBC_SHA384',
+                   'TLS_DHE_PSK_WITH_AES_128_GCM_SHA256',
+                   'TLS_DHE_PSK_WITH_AES_256_GCM_SHA384',
+                   'TLS_DHE_PSK_WITH_AES_128_CCM',
+                   'TLS_DHE_PSK_WITH_AES_256_CCM'],
+  'entries_remove': [],
+  'guidelines': {'BSI'},
+  'notes': []}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">TLS Extensions compliance</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                            </h6>
+                        
+                            <h6 class="text-muted card-subtitle mb-2"
+                                style="font-family: Roboto, sans-serif;color: #a5a5a5;">
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            Compliance report for Extension against BSI guidelines
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Add the following extensions to make the configuration compliant:<br/>- the supported_groups extension should be enabled<br/>- the signature_algorithms extension should be enabled<br/>&nbsp;&nbsp;
+NOTE: if this condition results as an ERROR "must be enabled" it may be a false positive. It is caused by the web server not asking the certificate to the client not allowing the tool to verify whether the extension is supported.<br/>- the encrypt_then_mac extension should be enabled</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">No snippet available</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">No snippet available</p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-3"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-3 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-3"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'encrypt_then_mac': { 'action': 'should be enabled',
+                        'level': 'RECOMMENDED',
+                        'original_level': 'recommended',
+                        'source': 'BSI',
+                        'total_string_only': False},
+  'entries_add': [ 'supported_groups',
+                   'signature_algorithms',
+                   'encrypt_then_mac'],
+  'entries_remove': [],
+  'guidelines': {'BSI'},
+  'notes': [],
+  'signature_algorithms': { 'action': 'should be enabled',
+                            'level': 'RECOMMENDED',
+                            'notes': '\n'
+                                     'NOTE: if this condition results as an '
+                                     'ERROR "must be enabled" it may be a '
+                                     'false positive. It is caused by the web '
+                                     'server not asking the certificate to the '
+                                     'client not allowing the tool to verify '
+                                     'whether the extension is supported.',
+                            'original_level': 'recommended',
+                            'source': 'BSI',
+                            'total_string_only': False},
+  'supported_groups': { 'action': 'should be enabled',
+                        'level': 'RECOMMENDED',
+                        'original_level': 'recommended',
+                        'source': 'BSI',
+                        'total_string_only': False}}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">Groups compliance</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                            </h6>
+                        
+                            <h6 class="text-muted card-subtitle mb-2"
+                                style="font-family: Roboto, sans-serif;color: #a5a5a5;">
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            Compliance report for Groups against BSI guidelines
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Add the following curves to the server configuration:<br/>- ffdhe3072 should be enabled according to BSI<br/>- ffdhe4096 should be enabled according to BSI<br/>- brainpoolP256r1 should be enabled according to BSI<br/>- brainpoolP384r1 should be enabled according to BSI<br/>- brainpoolP512r1 should be enabled according to BSI<br/>- brainpoolP256r1tls13 should be enabled according to BSI<br/>- brainpoolP384r1tls13 should be enabled according to BSI<br/>- brainpoolP512r1tls13 should be enabled according to BSI</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;"><p>- <b>Quick solution</b>: replace the instruction of the directive <code>SSLOpenSSLConfCmd groups</code> with the following string:<br/> <code>secp256r1:secp384r1:secp521r1:ffdhe3072:ffdhe4096:brainpoolP256r1:brainpoolP384r1:brainpoolP512r1:brainpoolP256r1tls13:brainpoolP384r1tls13:brainpoolP512r1tls13;</code><br/>- <b>Advanced solution</b>: check the directive <code>SSLOpenSSLConfCmd groups</code> and for each element in the <b>Textual</b> section above, follow the instructions provided. The separator for this directive is <code>:</code> and to disable an element it is necessary to remove it from the string. <br/>NOTE: in order to disable <code>ffdhe*</code> groups remove the <code>dhparams</code> from the end of the first certificate file</p></p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;"><p>- <b>Quick solution</b>: replace the instruction of the directive <code>ssl_ecdh_curve</code> with the following string:<br/> <code>secp256r1:secp384r1:secp521r1:ffdhe3072:ffdhe4096:brainpoolP256r1:brainpoolP384r1:brainpoolP512r1:brainpoolP256r1tls13:brainpoolP384r1tls13:brainpoolP512r1tls13;</code><br/>- <b>Advanced solution</b>: check the directive <code>ssl_ecdh_curve</code> and for each element in the <b>Textual</b> section above, follow the instructions provided. The separator for this directive is <code>:</code> and to disable an element it is necessary to remove it from the string.<br/>NOTE: in order to disable <code>ffdhe*</code> groups remove the <code>ssl_dhparam</code> directive.<br/>NOTE: this directive is only supported by Nginx 1.19.4 or higher.</p></p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-4"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-4 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-4"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'brainpoolP256r1': { 'action': 'should be enabled',
+                       'level': 'RECOMMENDED',
+                       'original_level': 'recommended',
+                       'source': 'BSI',
+                       'total_string_only': False},
+  'brainpoolP256r1tls13': { 'action': 'should be enabled',
+                            'level': 'RECOMMENDED',
+                            'original_level': 'recommended',
+                            'source': 'BSI',
+                            'total_string_only': False},
+  'brainpoolP384r1': { 'action': 'should be enabled',
+                       'level': 'RECOMMENDED',
+                       'original_level': 'recommended',
+                       'source': 'BSI',
+                       'total_string_only': False},
+  'brainpoolP384r1tls13': { 'action': 'should be enabled',
+                            'level': 'RECOMMENDED',
+                            'original_level': 'recommended',
+                            'source': 'BSI',
+                            'total_string_only': False},
+  'brainpoolP512r1': { 'action': 'should be enabled',
+                       'level': 'RECOMMENDED',
+                       'original_level': 'recommended',
+                       'source': 'BSI',
+                       'total_string_only': False},
+  'brainpoolP512r1tls13': { 'action': 'should be enabled',
+                            'level': 'RECOMMENDED',
+                            'original_level': 'recommended',
+                            'source': 'BSI',
+                            'total_string_only': False},
+  'entries_add': [ 'secp256r1 / P-256',
+                   'secp384r1 / P-384',
+                   'secp521r1 / P-521',
+                   'ffdhe3072',
+                   'ffdhe4096',
+                   'brainpoolP256r1',
+                   'brainpoolP384r1',
+                   'brainpoolP512r1',
+                   'brainpoolP256r1tls13',
+                   'brainpoolP384r1tls13',
+                   'brainpoolP512r1tls13'],
+  'entries_remove': [],
+  'ffdhe3072': { 'action': 'should be enabled',
+                 'level': 'RECOMMENDED',
+                 'original_level': 'recommended',
+                 'source': 'BSI',
+                 'total_string_only': False},
+  'ffdhe4096': { 'action': 'should be enabled',
+                 'level': 'RECOMMENDED',
+                 'original_level': 'recommended',
+                 'source': 'BSI',
+                 'total_string_only': False},
+  'guidelines': {'BSI'},
+  'notes': [],
+  'secp256r1 / P-256': { 'action': 'has to be enabled',
+                         'level': 'MUST',
+                         'original_level': 'recommended',
+                         'source': 'BSI',
+                         'total_string_only': True},
+  'secp384r1 / P-384': { 'action': 'has to be enabled',
+                         'level': 'MUST',
+                         'original_level': 'recommended',
+                         'source': 'BSI',
+                         'total_string_only': True},
+  'secp521r1 / P-521': { 'action': 'has to be enabled',
+                         'level': 'MUST',
+                         'original_level': 'recommended',
+                         'source': 'BSI',
+                         'total_string_only': True}}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">Signature Algorithms compliance</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                            </h6>
+                        
+                            <h6 class="text-muted card-subtitle mb-2"
+                                style="font-family: Roboto, sans-serif;color: #a5a5a5;">
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            Compliance report for Signature against BSI guidelines
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Enable the following signature algorithms:<br/>- rsa_pss_rsae_sha256 should be enabled according to BSI<br/>- rsa_pss_rsae_sha384 should be enabled according to BSI<br/>- rsa_pss_rsae_sha512 should be enabled according to BSI<br/>- rsa_pss_pss_sha256 should be enabled according to BSI<br/>- rsa_pss_pss_sha384 should be enabled according to BSI<br/>- rsa_pss_pss_sha512 should be enabled according to BSI<br/>- ecdsa_secp521r1_sha512 should be enabled according to BSI<br/>- ecdsa_brainpoolP256r1tls13_sha256 should be enabled according to BSI<br/>- ecdsa_brainpoolP384r1tls13_sha384 should be enabled according to BSI<br/>- ecdsa_brainpoolP512r1tls13_sha512 should be enabled according to BSI<br/>NOTE: your OpenSSL version may not support all the signature algorithms listed in this section. The mitigations provided in this report only show the supported ones.</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;"><p>- <b>Quick solution</b>: replace the instruction of the directive <code>SSLOpenSSLConfCmd ClientSignatureAlgorithms</code> with the following string:<br/> <code>rsa_pss_rsae_sha256:rsa_pss_rsae_sha384:rsa_pss_rsae_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:ecdsa_secp256r1_sha256:ecdsa_secp384r1_sha384:ecdsa_secp521r1_sha512;</code><br/>- <b>Advanced solution</b>: check the directive <code>SSLOpenSSLConfCmd ClientSignatureAlgorithms</code> and for each element in the <b>Textual</b> section above, follow the instructions provided. The separator for this directive is <code>:</code> and to disable an element you have to remove it from the string.</p></p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;"><p>- <b>Quick solution</b>: replace the instruction of the directive <code>ssl_conf_command SignatureAlgorithms</code> with the following string:<br/> <code>rsa_pss_rsae_sha256:rsa_pss_rsae_sha384:rsa_pss_rsae_sha512:rsa_pss_pss_sha256:rsa_pss_pss_sha384:rsa_pss_pss_sha512:ecdsa_secp256r1_sha256:ecdsa_secp384r1_sha384:ecdsa_secp521r1_sha512;</code><br/>- <b>Advanced solution</b>: check the directive <code>ssl_conf_command SignatureAlgorithms</code> and for each element in the <b>Textual</b> section above, follow the instructions provided. The separator for this directive is <code>:</code> and to disable an element you have to remove it from the string.</p><p><br/>NOTE: this directive is only supported by Nginx 1.19.4 or higher.</p></p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-5"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-5 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-5"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'ecdsa_brainpoolP256r1tls13_sha256': { 'action': 'should be enabled',
+                                         'level': 'RECOMMENDED',
+                                         'original_level': 'recommended',
+                                         'source': 'BSI',
+                                         'total_string_only': False},
+  'ecdsa_brainpoolP384r1tls13_sha384': { 'action': 'should be enabled',
+                                         'level': 'RECOMMENDED',
+                                         'original_level': 'recommended',
+                                         'source': 'BSI',
+                                         'total_string_only': False},
+  'ecdsa_brainpoolP512r1tls13_sha512': { 'action': 'should be enabled',
+                                         'level': 'RECOMMENDED',
+                                         'original_level': 'recommended',
+                                         'source': 'BSI',
+                                         'total_string_only': False},
+  'ecdsa_secp256r1_sha256': { 'action': 'has to be enabled',
+                              'level': 'MUST',
+                              'original_level': 'recommended',
+                              'source': 'BSI',
+                              'total_string_only': True},
+  'ecdsa_secp384r1_sha384': { 'action': 'has to be enabled',
+                              'level': 'MUST',
+                              'original_level': 'recommended',
+                              'source': 'BSI',
+                              'total_string_only': True},
+  'ecdsa_secp521r1_sha512': { 'action': 'should be enabled',
+                              'level': 'RECOMMENDED',
+                              'original_level': 'recommended',
+                              'source': 'BSI',
+                              'total_string_only': False},
+  'entries_add': [ 'rsa_pss_rsae_sha256',
+                   'rsa_pss_rsae_sha384',
+                   'rsa_pss_rsae_sha512',
+                   'rsa_pss_pss_sha256',
+                   'rsa_pss_pss_sha384',
+                   'rsa_pss_pss_sha512',
+                   'ecdsa_secp256r1_sha256',
+                   'ecdsa_secp384r1_sha384',
+                   'ecdsa_secp521r1_sha512',
+                   'ecdsa_brainpoolP256r1tls13_sha256',
+                   'ecdsa_brainpoolP384r1tls13_sha384',
+                   'ecdsa_brainpoolP512r1tls13_sha512'],
+  'entries_remove': [],
+  'guidelines': {'BSI'},
+  'notes': [],
+  'rsa_pss_pss_sha256': { 'action': 'should be enabled',
+                          'level': 'RECOMMENDED',
+                          'original_level': 'recommended',
+                          'source': 'BSI',
+                          'total_string_only': False},
+  'rsa_pss_pss_sha384': { 'action': 'should be enabled',
+                          'level': 'RECOMMENDED',
+                          'original_level': 'recommended',
+                          'source': 'BSI',
+                          'total_string_only': False},
+  'rsa_pss_pss_sha512': { 'action': 'should be enabled',
+                          'level': 'RECOMMENDED',
+                          'original_level': 'recommended',
+                          'source': 'BSI',
+                          'total_string_only': False},
+  'rsa_pss_rsae_sha256': { 'action': 'should be enabled',
+                           'level': 'RECOMMENDED',
+                           'original_level': 'recommended',
+                           'source': 'BSI',
+                           'total_string_only': False},
+  'rsa_pss_rsae_sha384': { 'action': 'should be enabled',
+                           'level': 'RECOMMENDED',
+                           'original_level': 'recommended',
+                           'source': 'BSI',
+                           'total_string_only': False},
+  'rsa_pss_rsae_sha512': { 'action': 'should be enabled',
+                           'level': 'RECOMMENDED',
+                           'original_level': 'recommended',
+                           'source': 'BSI',
+                           'total_string_only': False}}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">Certificate Extensions compliance</h3>
+
+                        <h6 class="card-title" style="color: #000000;font-family: Roboto, sans-serif;">
+                            
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                                
+                                
+                            
+                            </h6>
+                        
+                            <h6 class="text-muted card-subtitle mb-2"
+                                style="font-family: Roboto, sans-serif;color: #a5a5a5;">
+                            </h6>
+                        
+                        <p class="card-text"
+                            style="font-family: 'Roboto Condensed', sans-serif;color: #6c757d;font-style: italic;">
+                            Compliance report for CertificateExtensions against BSI guidelines
+                        </p>
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            <h5 style="color: #000000;font-family: Roboto, sans-serif;">Mitigation</h5>
+                            <ul class="list-group list-group-flush" style="border-style: solid;border-color: #8db53d;">
+
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Textual</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">Your certificate has the following issues in its extensions:<br/>- SubjectAlternativeName has to be fixed<br/>&nbsp;&nbsp;
+NOTE: Issue detected: * in subjectAltName within certificate #1<br/>You should re-issue it following the constraints in the notes for each field.</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Apache</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">No snippet available</p>
+                                    </p>
+                                </li>
+                                
+                                <li class="list-group-item" style="border-radius: 4px;border-style: none;">
+                                    <h5 class="mb-0"
+                                        style="border-style: none;border-bottom-style: none;font-family: Roboto, sans-serif;">
+                                        <strong>Nginx</strong>
+                                    </h5>
+                                    <p style="font-family: Roboto, sans-serif;text-align: justify;margin: 3px;">No snippet available</p>
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="card" style="border-style: none;padding: 2px;margin: 0px;">
+                            
+                            <div class="accordion" role="tablist" id="accordion-6"
+                                style="border-width: 3px;border-radius: 0px,0px,3px,3px;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed"
+                                            data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-1"
+                                            aria-expanded="false" aria-controls="accordion-6 .item-1"
+                                            style="border-style: solid;border-color: #8db53d;font-weight: bold;font-family: Roboto, sans-serif;color: #000000;">RAW
+                                            Output</button></h2>
+                                    <div class="accordion-collapse collapse item-1" role="tabpanel"
+                                        data-bs-parent="#accordion-6"
+                                        style="border-style: solid;border-color: #0068b4;border-top-style: none;border-bottom-style: none;height: 200px;">
+                                        <div class="accordion-body"><textarea onclick="this.focus();this.select()"
+                                                style="max-width: 100%;min-width: 100%;width: 100%;height: 150px;min-height: 0px;max-height: none;border-radius: 3px;font-family: 'Roboto Mono', monospace;background: #f5faff;color: #0068b4;border-width: 3px;border-color: #0068b4;border-top-style: none;border-right-color: #acd5fe;border-bottom-style: none;border-left-color: #acd5fe;padding: 12px;margin: 0px;font-size: 13px;margin-top: 10px;"
+                                                readonly="" name="raw_code">{ 'entries_add': [],
+  'entries_remove': ['subjectAltName'],
+  'guidelines': {'BSI'},
+  'notes': [],
+  'only_total_string_add': True,
+  'subjectAltName': { 'action': 'has to be disabled',
+                      'level': 'MUST NOT',
+                      'notes': '\n'
+                               'NOTE: Issue detected: * in subjectAltName '
+                               'within certificate #1',
+                      'original_level': 'must not',
+                      'source': 'BSI',
+                      'total_string_only': False}}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        <footer class="text-center footer-basic"
+            style="background: rgba(255,255,255,0);padding-bottom: 5px;padding-top: 72px;"><img class="img-fluid"
+                src="assets/img/FBK_Cybersecurity_white.png" style="width: 150px;">
+            <p class="copyright" style="color: #a5a5a5;font-family: Roboto, sans-serif;font-size: 14px;">FBK - Security
+                And Trust Unit © 2024</p>
+        </footer><label class="form-label"></label>
+    </header>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
